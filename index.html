@@ -684,9 +684,9 @@
       gap: 1.5rem;
     }
 
-    .projects-grid-3 {
+    .projects-grid-apps {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
       margin-bottom: 1.5rem;
     }
@@ -932,11 +932,6 @@
     /* ============================================================
        RESPONSIVE
     ============================================================ */
-    @media (max-width: 1100px) {
-      .projects-grid-3 { grid-template-columns: 1fr 1fr; }
-      .projects-grid-3 .project-card-sm:last-child { grid-column: 1 / -1; }
-    }
-
     @media (max-width: 900px) {
       :root { --section-pad: 5rem 6vw; }
       .nav-links { display: none; }
@@ -960,7 +955,7 @@
       .project-featured { grid-template-columns: 1fr; }
       .pf-visual { min-height: 200px; border-left: none; border-top: 1px solid var(--border); }
       .projects-grid-2 { grid-template-columns: 1fr; }
-      .projects-grid-3 { grid-template-columns: 1fr; }
+      .projects-grid-apps { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
       .hero-stats { display: none; }
@@ -1048,7 +1043,7 @@
 
     <div class="hero-stats">
       <div class="stat-item">
-        <div class="stat-number">4</div>
+        <div class="stat-number">5</div>
         <div class="stat-label">PROJETS EN LIGNE</div>
       </div>
       <div class="stat-item">
@@ -1210,8 +1205,8 @@
       </div>
     </div>
 
-    <!-- Grid of 3 : applications métier -->
-    <div class="projects-grid-3">
+    <!-- Grille des applications métier -->
+    <div class="projects-grid-apps">
 
       <!-- Recouvra -->
       <div class="project-card-sm reveal">
@@ -1275,9 +1270,40 @@
         <div class="card-note">APPLICATION PRIVÉE DU CLIENT — ACCÈS SUR IDENTIFIANTS</div>
       </div>
 
+      <!-- Salame Hôtel -->
+      <div class="project-card-sm reveal" style="transition-delay:0.1s">
+        <div class="card-number">004 — GESTION HÔTELIÈRE</div>
+        <h3 class="card-name">Salame Hôtel</h3>
+        <p class="card-desc">
+          Application de gestion pour un établissement de 14 logements meublés à Ziguinchor :
+          réservations, clients, factures et suivi des recettes.
+        </p>
+        <div class="card-details">
+          <div class="cd-row">
+            <span class="cd-key">PROBLÈME</span>
+            <span class="cd-val">Réservations suivies sur un agenda papier, sans vue d'ensemble des recettes, des dépenses et de l'occupation</span>
+          </div>
+          <div class="cd-row">
+            <span class="cd-key">SOLUTION</span>
+            <span class="cd-val">Tableau de bord, réservations et fiches clients, factures et contrats en PDF, suivi des dépenses</span>
+          </div>
+          <div class="cd-row">
+            <span class="cd-key">RÉSULTAT</span>
+            <span class="cd-val">En ligne et utilisée par la gérante, améliorée au fil de ses retours</span>
+          </div>
+        </div>
+        <div class="tags-wrap">
+          <span class="tag green-tag">React</span>
+          <span class="tag green-tag">Tailwind CSS</span>
+          <span class="tag green-tag">Supabase</span>
+          <span class="tag green-tag">Netlify</span>
+        </div>
+        <div class="card-note">APPLICATION PRIVÉE DU CLIENT — ACCÈS SUR IDENTIFIANTS</div>
+      </div>
+
       <!-- Scientia Egregia -->
       <div class="project-card-sm reveal" style="transition-delay:0.2s">
-        <div class="card-number">004 — PLATEFORME ÉDUCATIVE</div>
+        <div class="card-number">005 — PLATEFORME ÉDUCATIVE</div>
         <h3 class="card-name">Scientia Egregia</h3>
         <p class="card-desc">
           Plateforme web avec des espaces distincts pour les élèves, les parents et
@@ -1308,7 +1334,7 @@
 
       <!-- ZaatTech -->
       <div class="project-card-sm reveal">
-        <div class="card-number">005 — CONTENU &amp; MÉDIA TECH</div>
+        <div class="card-number">006 — CONTENU &amp; MÉDIA TECH</div>
         <h3 class="card-name">ZaatTech</h3>
         <p class="card-desc">
           Chaîne YouTube francophone dédiée à la tech et à l'intelligence artificielle.
@@ -1340,7 +1366,7 @@
 
       <!-- Production Visuelle -->
       <div class="project-card-sm reveal" style="transition-delay:0.1s">
-        <div class="card-number">006 — IDENTITÉ VISUELLE &amp; PHOTO</div>
+        <div class="card-number">007 — IDENTITÉ VISUELLE &amp; PHOTO</div>
         <h3 class="card-name">Production Visuelle</h3>
         <p class="card-desc">
           Identités de marque complètes, shootings photo professionnels et productions
