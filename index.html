@@ -18,22 +18,22 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --ink:        #0A0A0F;
-      --ink2:       #111118;
-      --ink3:       #1A1A24;
-      --ink4:       #22222F;
+      --ink:        #12121A;
+      --ink2:       #191922;
+      --ink3:       #232330;
+      --ink4:       #2D2D3C;
       --amber:      #E8A020;
       --amber-dim:  #9A6B10;
       --amber-glow: rgba(232,160,32,0.12);
       --white:      #F0EDE6;
-      --white-dim:  #C8C5BE;
-      --muted:      #62626F;
-      --muted2:     #8A8A9A;
+      --white-dim:  #DAD7D0;
+      --muted:      #8C8C9C;
+      --muted2:     #B4B4C2;
       --green:      #3DDC84;
       --green-bg:   rgba(61,220,132,0.07);
       --green-bd:   rgba(61,220,132,0.18);
-      --border:     #252530;
-      --border2:    #1E1E28;
+      --border:     #34344A;
+      --border2:    #2A2A3A;
 
       --font-sans:  'DM Sans', sans-serif;
       --font-mono:  'JetBrains Mono', monospace;
@@ -107,7 +107,7 @@
       transition: background 0.4s, border-color 0.4s;
     }
     nav.scrolled {
-      background: rgba(10,10,15,0.92);
+      background: rgba(18,18,26,0.92);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
@@ -348,7 +348,7 @@
     }
     .stat-label {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.1em;
       margin-top: 4px;
@@ -388,7 +388,7 @@
     }
     .scroll-label {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.2em;
       writing-mode: vertical-rl;
@@ -416,7 +416,7 @@
     }
     .section-index {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 11px;
       color: var(--amber);
       letter-spacing: 0.15em;
       white-space: nowrap;
@@ -428,7 +428,7 @@
     }
     .section-title-sm {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.1em;
       white-space: nowrap;
@@ -501,7 +501,7 @@
 
     .skills-label {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.18em;
       margin-bottom: 0.75rem;
@@ -571,7 +571,7 @@
     .pf-top {}
     .project-badge {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       letter-spacing: 0.18em;
       color: var(--amber);
       margin-bottom: 1.5rem;
@@ -609,7 +609,7 @@
     .detail-item {}
     .detail-label {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.15em;
       margin-bottom: 4px;
@@ -693,7 +693,7 @@
     .card-link { margin-top: 1.25rem; }
     .card-note {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.12em;
       margin-top: 1.25rem;
@@ -724,7 +724,7 @@
 
     .card-number {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.15em;
       margin-bottom: 1.25rem;
@@ -756,7 +756,7 @@
     }
     .cd-key {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.12em;
       align-self: start;
@@ -797,7 +797,7 @@
     .process-step:hover { background: var(--ink3); }
     .ps-num {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--amber);
       letter-spacing: 0.15em;
       margin-bottom: 1.5rem;
@@ -892,7 +892,7 @@
     .cl-icon { font-size: 18px; opacity: 0.5; }
     .cl-platform {
       font-family: var(--font-mono);
-      font-size: 9px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.12em;
       display: block;
@@ -924,7 +924,7 @@
     .footer-left strong { color: var(--amber); font-weight: 400; }
     .footer-right {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.08em;
     }
@@ -943,7 +943,7 @@
         position: fixed;
         top: var(--nav-h);
         left: 0; right: 0;
-        background: rgba(10,10,15,0.97);
+        background: rgba(18,18,26,0.97);
         backdrop-filter: blur(20px);
         padding: 2rem 6vw;
         gap: 1.5rem;
@@ -1200,7 +1200,7 @@
         <div class="pf-visual-inner">
           <div class="pf-visual-icon">🛒</div>
           <div>kaay-diunde.site</div>
-          <div style="margin-top:6px;color:var(--amber);font-size:9px;letter-spacing:0.15em">LIVE EN PRODUCTION</div>
+          <div style="margin-top:6px;color:var(--amber);font-size: 11px;letter-spacing:0.15em">LIVE EN PRODUCTION</div>
         </div>
       </div>
     </div>
